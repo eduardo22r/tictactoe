@@ -15,11 +15,7 @@ int main() {
     cerr << "Invalid argument: " << e.what() << endl;
   } catch (const out_of_range& e) {
     cerr << "Out of range: " << e.what() << endl;
-  } catch (const exception& e) {
-    cerr << "Exception caught: " << e.what() << endl;
-  } catch (...) {
-    cerr << "Unknown exception caught" << endl;
-  }
+  } 
   
   delete gamePtr;
 
